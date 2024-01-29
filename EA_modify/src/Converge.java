@@ -30,7 +30,6 @@ public class Converge{
     static int PARTITION_NUMBER = 50;
 
     static int DENSITY_PROPORTION = 1;
-    static int TEMPORAL_PROPORTION = 1;
     static int SPATIAL_PROPORTION = 1;
 
     static long demoTime1 = 0;
@@ -60,10 +59,9 @@ public class Converge{
         if(args.length >= 5){
             PARTITION_NUMBER = Integer.parseInt(args[4]);
         }
-        if (args.length >= 8) {
+        if (args.length >= 7) {
             DENSITY_PROPORTION = Integer.parseInt(args[5]);
-            TEMPORAL_PROPORTION = Integer.parseInt(args[6]);
-            SPATIAL_PROPORTION = Integer.parseInt(args[7]);
+            SPATIAL_PROPORTION = Integer.parseInt(args[6]);
         }
         System.out.println("input_path: " + input_path);
         System.out.println("output_path: " + output_path);

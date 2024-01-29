@@ -47,7 +47,6 @@ public class Converge {
     static int LONGITUDE_COLUMN;
 
     static int DENSITY_PROPORTION = 1;
-    static int TEMPORAL_PROPORTION = 1;
     static int SPATIAL_PROPORTION = 1;
 
     static double timePropogation = 100;
@@ -80,15 +79,14 @@ public class Converge {
         final String delim = args[2];
         int k = Integer.parseInt(args[3]);
 
-        if (args.length >= 7) {
+        if (args.length >= 6) {
             DENSITY_PROPORTION = Integer.parseInt(args[4]);
-            TEMPORAL_PROPORTION = Integer.parseInt(args[5]);
-            SPATIAL_PROPORTION = Integer.parseInt(args[6]);
+            SPATIAL_PROPORTION = Integer.parseInt(args[5]);
         }
         //有时空约束使用时空约束，否则默认没有约束
-        if(args.length >= 9){
-            timePropogation = Double.parseDouble(args[7]);
-            spacePropogation = Double.parseDouble(args[8]);
+        if(args.length >= 8){
+            timePropogation = Double.parseDouble(args[6]);
+            spacePropogation = Double.parseDouble(args[7]);
         }
         System.out.println("input_path: " + input_path);
         System.out.println("output_path: " + output_path);
