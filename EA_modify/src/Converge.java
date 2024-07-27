@@ -435,11 +435,15 @@ public class Converge{
      * @param timeSpaceBlockIndex
      */
     private static void findAdjacencyBlock(int[] timeSpaceState, Set<Integer> expansionTimeSpaceBlocks, int timeSpaceBlockIndex) {
-        int[] expansionBlocks = new int[4];
+        int[] expansionBlocks = new int[8];
         expansionBlocks[0] = timeSpaceBlockIndex + 1;
         expansionBlocks[1] = timeSpaceBlockIndex - 1;
         expansionBlocks[2] = timeSpaceBlockIndex + PARTITION_NUMBER;
         expansionBlocks[3] = timeSpaceBlockIndex - PARTITION_NUMBER;
+        expansionBlocks[4] = timeSpaceBlockIndex + PARTITION_NUMBER + 1;
+        expansionBlocks[5] = timeSpaceBlockIndex + PARTITION_NUMBER - 1;
+        expansionBlocks[6] = timeSpaceBlockIndex - PARTITION_NUMBER + 1;
+        expansionBlocks[7] = timeSpaceBlockIndex - PARTITION_NUMBER - 1;
 
         expansionTimeSpaceBlocks.remove(timeSpaceBlockIndex);
         timeSpaceState[timeSpaceBlockIndex] = -1;
