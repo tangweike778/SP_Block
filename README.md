@@ -10,7 +10,7 @@ The startup function for RA, PA, and RPA is "Converge.main". It requires seven a
 We have provided a test data in data folder. you can run the test data by entering the parameters "./data/test.txt ./output/test 10 1 1" in main function".  
 
 # EA
-The startup function for EA is "Converge.main". It requires seven arguments to be input as follows: "InputPath OutputPath delimeter k h pro1 pro2 pro3"  
+The startup function for EA is "Converge.main". It requires seven arguments to be input as follows: "InputPath OutputPath delimeter k h pro1 pro2"  
 **InputPath**: File path for input data  
 **OutputPath**: Path for result output  
 **delimeter**: delimeter  
