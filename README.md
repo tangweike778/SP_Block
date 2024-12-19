@@ -1,5 +1,3 @@
-![image](https://github.com/user-attachments/assets/832b5112-a022-48fe-8f58-d308553af342)# sc-blocks-mining
-
 # RPA PA RA
 The startup function for RA, PA, and RPA is "Converge.main". It requires seven arguments to be input as follows: "InputPath OutputPath delimeter k pro1 pro2"  
 **InputPath**: File path for input data  
